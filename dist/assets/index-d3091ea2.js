@@ -170,4 +170,4 @@ T:Exercício 7
 M:4/4
 L:4/4
 K:C
-E | G | B |  d | f |`],p2={C:"Do",D:"Re",E:"Mi",F:"Fa",G:"Sol",A:"La",B:"Si",c:"Do",d:"Re",e:"Mi",f:"Fa",g:"Sol",a:"La",b:"Si"},v2=e=>{const t=Math.random(),r=document.createElement("div");r.id=t.toString(),document.body.appendChild(r),u2.renderAbc(t.toString(),e,{responsive:"resize",add_classes:!0,clickListener:n=>{n.pitches&&alert(p2[n.pitches[0].name])}})};d2.forEach(e=>{v2(e)});
+E | G | B |  d | f |`],p2={C:"Dó",D:"Re",E:"Mi",F:"Fá",G:"Sol",A:"La",B:"Si",c:"Dó",d:"Re",e:"Mi",f:"Fá",g:"Sol",a:"La",b:"Si"},v2=e=>{const t=Math.random(),r=document.createElement("div");r.id=t.toString(),document.body.appendChild(r),u2.renderAbc(t.toString(),e,{responsive:"resize",add_classes:!0,clickListener:n=>{n.pitches&&alert(p2[n.pitches[0].name])}})},g2=()=>{d2.forEach(e=>{v2(e)})};g2();

@@ -12,23 +12,23 @@ const exercises = [
 ];
 
 const noteDictionary: Record<string, string> = {
-  C: "Do",
+  C: "Dó",
   D: "Re",
   E: "Mi",
-  F: "Fa",
+  F: "Fá",
   G: "Sol",
   A: "La",
   B: "Si",
-  c: "Do",
+  c: "Dó",
   d: "Re",
   e: "Mi",
-  f: "Fa",
+  f: "Fá",
   g: "Sol",
   a: "La",
   b: "Si",
 };
 
-const renderExercise = (exercise: string) => {
+export const renderExercise = (exercise: string) => {
   const randomId = Math.random();
   const element = document.createElement("div");
   element.id = randomId.toString();
@@ -45,8 +45,10 @@ const renderExercise = (exercise: string) => {
   });
 };
 
-exercises.forEach((exercise) => {
-  renderExercise(exercise);
-});
+export const run = () => {
+  exercises.forEach((exercise) => {
+    renderExercise(exercise);
+  });
+};
 
-export {};
+run();

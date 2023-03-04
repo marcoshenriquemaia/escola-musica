@@ -45,7 +45,7 @@ const renderExercise = (exercise: string) => {
   });
 };
 
-exercises.forEach((exercise, index) => {
+exercises.forEach((exercise) => {
   renderExercise(exercise);
 });
 
